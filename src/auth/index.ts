@@ -21,9 +21,6 @@ export const { handlers, auth: uncachedAuth, signIn, signOut } = NextAuth({
             }
         })
     ],
-    pages: {
-        signIn: "/login"
-    },
     callbacks: {
         session: async ({ token, session }) => {
             session.user.id = token.sub;

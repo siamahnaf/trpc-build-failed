@@ -33,7 +33,7 @@ const Provider = ({ children }: { children: ReactNode }) => {
         trpc.createClient({
             links: [
                 unstable_httpBatchStreamLink({
-                    url: getUrl(),
+                    url: getUrl()
                 }),
             ],
         }),
