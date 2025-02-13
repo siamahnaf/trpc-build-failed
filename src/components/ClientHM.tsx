@@ -3,7 +3,7 @@
 import { trpc } from "@/trpc/client";
 
 const ClientHM = () => {
-    const [data] = trpc.wdgp.list.useSuspenseQuery();
+    const { data } = trpc.wdgp.list.useQuery();
 
     return (
         <div>
